@@ -30,13 +30,10 @@ class Corredora_model extends CI_Model {
 		$this->db->where('idUsuario', $id);
 		return $this->db->update('usuario', $usuario); 
 	}
-
 	public function insert_usuario($usuario)
 	{
 		return $this->db->insert('Usuario', $usuario); 
 	}
-
-
 	public function delete_usuario($id)
 	{
 		$this->db->where('idUsuario', $id);
@@ -65,7 +62,6 @@ class Corredora_model extends CI_Model {
 		$this->db->where('idTipo', $id);
 		return $this->db->delete('tipo');
 	}
-
 	public function get_foto($id_propiedad)
 	{
 		$this->db->where('Propiedad_idPropiedad', $id_propiedad);
@@ -97,14 +93,14 @@ class Corredora_model extends CI_Model {
 		$this->db->limit(4);
 		$this->db->select('*,transaccion.descripcion as destran,propiedad.descripcion as desprop');
 		$this->db->join('transaccion','Transaccion = idTransaccion');
-		$this->db->join('comuna','propiedad.Comuna_idComuna = comuna.idComuna');
+		$this->db->join('comuna','propiedad.comuna_idComuna = comuna.idComuna');
 		$this->db->order_by("RAND()");
 		return $this->db->get('propiedad')->result_array();
 	}
 	public function get_propiedad($id)
 	{	
 		$this->db->select('*,comuna.descripcion as comuna_nombre,propiedad.descripcion as descripcion_propiedad,tipo.descripcion as descripcion_tipo,transaccion.descripcion as descripcion_transaccion');
-		$this->db->join('Comuna','Comuna_idComuna = idComuna','left');
+		$this->db->join('comuna','comuna_idComuna = idComuna','left');
 		$this->db->join('provincias','provincia_id=Region_idRegion','left');
 		$this->db->join('region','region_id = idRegion','left');
 		$this->db->join('tipo','Tipo_idTipo = idTipo','left');
@@ -144,7 +140,6 @@ class Corredora_model extends CI_Model {
 	{
 		return $this->db->get('comuna')->result_array();
 	}
-
 	public function get_transaccion()
 	{
 		return $this->db->get('transaccion')->result_array();
