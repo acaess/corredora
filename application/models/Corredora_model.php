@@ -109,6 +109,7 @@ class Corredora_model extends CI_Model {
 		$query = $this->db->get('propiedad')->result_array();
  			return $query;
 	}
+	
 	public function insert_propiedad($propiedad)
 	{
 		return $this->db->insert('propiedad', $propiedad); 
