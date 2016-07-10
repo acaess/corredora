@@ -1,4 +1,4 @@
-<div class="col-md-12">
+<div class="col-md-6 col-md-push-3">
   <h3>Lista de Tipo</h3>
   <!-- Button trigger modal -->
 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
