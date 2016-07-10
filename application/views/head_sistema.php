@@ -48,7 +48,7 @@
         <li><a href="<?=base_url()?>index.php/sistema/listar_usuario">Administrar Usuarios</a></li>
         <li><a href="<?=base_url()?>index.php/sistema/listar_transaccion">Administrar Transaccion</a></li>
         <li><a href="<?=base_url()?>index.php/sistema/listar_tipo">Administrar Tipo Propiedad</a></li>
-        <li role="presentation"><a href="<?=base_url()?>/index.php/sistema/desplegar_solicitud">Alertas <span class="badge"><?=$not;?></span></a></li>
+        <li role="presentation"><a href="<?=base_url()?>index.php/sistema/desplegar_solicitud">Alertas <span class="badge"><?=$not;?></span></a></li>
         <li><a href="<?=base_url()?>index.php/sistema/logout">Cerrar Sesíon</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
