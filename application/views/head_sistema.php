@@ -36,20 +36,20 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?=base_url()?>/index.php/sistema/administrar_propiedades">Corredora de Propiedades</a>
+      <a class="navbar-brand" href="<?=base_url()?>index.php/sistema/administrar_propiedades">Corredora de Propiedades</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="<?=base_url()?>/index.php/sistema/admin_propiedad">Agregar Propiedad</a></li>
-        <li><a href="<?=base_url()?>/index.php/sistema/administrar_propiedades">Administra Propiedades</a></li>
-        <li><a href="<?=base_url()?>/index.php/sistema/listar_usuario">Administrar Usuarios</a></li>
-        <li><a href="<?=base_url()?>/index.php/sistema/listar_transaccion">Administrar Transaccion</a></li>
-        <li><a href="<?=base_url()?>/index.php/sistema/listar_tipo">Administrar Tipo Propiedad</a></li>
+        <li><a href="<?=base_url()?>index.php/sistema/admin_propiedad">Agregar Propiedad</a></li>
+        <li><a href="<?=base_url()?>index.php/sistema/administrar_propiedades">Administra Propiedades</a></li>
+        <li><a href="<?=base_url()?>index.php/sistema/listar_usuario">Administrar Usuarios</a></li>
+        <li><a href="<?=base_url()?>index.php/sistema/listar_transaccion">Administrar Transaccion</a></li>
+        <li><a href="<?=base_url()?>index.php/sistema/listar_tipo">Administrar Tipo Propiedad</a></li>
         <li role="presentation"><a href="<?=base_url()?>/index.php/sistema/desplegar_solicitud">Alertas <span class="badge"><?=$not;?></span></a></li>
-        <li><a href="<?=base_url()?>/index.php/sistema/logout">Cerrar Sesíon</a></li>
+        <li><a href="<?=base_url()?>index.php/sistema/logout">Cerrar Sesíon</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
