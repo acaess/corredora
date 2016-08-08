@@ -31,7 +31,7 @@
     <link href="<?=base_url();?>/assets/css/bootstrap.min.css" rel="stylesheet">
 
 <div class="error">
-        <div class="error-code m-b-10 m-t-20">404 <i class="fa fa-warning"></i></div>
+        <div class="error-code m-b-10 m-t-20">404 pico <i class="fa fa-warning"></i></div>
         <h3 class="font-bold">Ups! página no encontrada</h3>
 
         <div class="error-desc">
